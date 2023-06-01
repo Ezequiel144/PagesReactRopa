@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import './App.css';
+import { Navbar } from './components/NavBar/NavBar.jsx';
+import { PagesOne } from './views/PagesOne/PagesOne.jsx';
+import { PagesProduc } from './views/PagesProduc/PagesProduc.jsx';
+import { Footer } from './components/Footer/Footer.jsx';
+import { PagesDetails } from './views/PagesDetails/PagesDetails.jsx';
+import { PagesCate } from './views/PagesCate/PagesCate';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path='/' Component={PagesOne} />
+        <Route path='/productos' Component={PagesProduc} />
+        <Route path='/productos/:idprod' Component={PagesDetails}/>
+        {/* <Route path='/productos/:idcate' Component={PagesProduc} /> */}
+        <Route path='/category' Component={PagesCate}/>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

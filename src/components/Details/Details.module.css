@@ -1,0 +1,28 @@
+.contentDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    height: 500px;
+}
+
+.imgDetails{
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.contentText{
+    max-width: 60%;
+}
+
+.descrip{
+    font-size: 1.3rem;
+}

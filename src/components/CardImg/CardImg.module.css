@@ -1,0 +1,38 @@
+.contentImgSec{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.imgClothing{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border: 1px solid rgb(68, 121, 179); */
+}
+
+.bgOpacity{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bgOpacity:hover{
+    background-color: black;
+    opacity: 0.4;
+    transition: 2s;
+}
+
+.bgOpacity:hover::after{
+    content: "style";
+    position: absolute;
+    top: 45%;
+    left: 43%;
+    transform: translateX(50%);
+    transform: translateY(50%);
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+}
