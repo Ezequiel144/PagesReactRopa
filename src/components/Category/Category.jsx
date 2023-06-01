@@ -7,7 +7,7 @@ const listCate = [
     {
         id:"1",
         name:"todo",
-        tolink : "/category/todo"
+        tolink : "/category/todos"
     },
     {
         id:"2",

@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #A7C7DE;
+    height: 50px;
+}
+
+.sec3{
+    display: flex;
+    column-gap: 10px
+}
+
+.linkRepo{
+    text-decoration: none;
+    color: white;
+}

@@ -9,7 +9,7 @@ export function Footer(){
                 <p>Ecommers de ropa por Lote</p>
             </section>
             <section className={styleFooter.sec2}>
-                <p>Paigna hecha por <Link>Ezequiel Garcia</Link></p>
+                <p>Paigna hecha por <Link to={"https://github.com/Ezequiel144"} className={styleFooter.linkRepo}>Ezequiel Garcia</Link></p>
             </section>
             <section className={styleFooter.sec3}>
                 <div className={styleFooter.face}>

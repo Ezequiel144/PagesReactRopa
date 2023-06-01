@@ -1,8 +1,12 @@
 main{
-    height: 100vh;
+    min-height: 800px;
     padding: 20px 0;
 }
 
 .sec1{
     padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }

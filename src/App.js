@@ -15,8 +15,8 @@ function App() {
         <Route path='/' Component={PagesOne} />
         <Route path='/productos' Component={PagesProduc} />
         <Route path='/productos/:idprod' Component={PagesDetails}/>
-        {/* <Route path='/productos/:idcate' Component={PagesProduc} /> */}
         <Route path='/category' Component={PagesCate}/>
+        <Route path='/category/:idcate' Component={PagesProduc} />
       </Routes>
       <Footer />
     </BrowserRouter>
