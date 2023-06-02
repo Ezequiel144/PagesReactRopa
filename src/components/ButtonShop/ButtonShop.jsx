@@ -8,7 +8,6 @@ export function ButtonShop({id}){
     return(
         <section className={styleButtonShop.contentButton}>
             <button id={id} className={styleButtonShop.button} onClick={ActionShop}>Comprar</button>
-            
         </section>
     )
 }
