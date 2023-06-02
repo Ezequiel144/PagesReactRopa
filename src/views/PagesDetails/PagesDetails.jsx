@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import ImgRemera1 from "../../assets/remera.png"
 import ImgPantalon1 from "../../assets/pantalon.png"
 import ImgPantalonSkiny from "../../assets/pantalonSkinny.png";
+import { ButtonShop } from "../../components/ButtonShop/ButtonShop.jsx";
 
 export function PagesDetails(){
 
@@ -59,8 +60,12 @@ export function PagesDetails(){
                     title={pro.title}
                     img={pro.img}
                     descrip={pro.descrip}
+                    price={pro.price}
                 />
-                <p>aca va el boton de compra</p>
+                {/* <p>aca va el boton de compra</p> */}
+                <ButtonShop 
+                    id = {idprod}
+                />
             </section>
         </main>
     )

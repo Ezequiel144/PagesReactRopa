@@ -20,7 +20,11 @@
 }
 
 .contentText{
+    /* border: 1px solid rebeccapurple; */
     max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
 }
 
 .title{

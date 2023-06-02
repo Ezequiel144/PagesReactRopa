@@ -1,6 +1,6 @@
 import React from "react";
 import styleCategory from "./Category.module.css";
-import { useParams } from "react-router-dom";
+/* import { useParams } from "react-router-dom"; */
 import { SelecCategory } from "../SelecCategory/SelecCategory.jsx";
 
 const listCate = [

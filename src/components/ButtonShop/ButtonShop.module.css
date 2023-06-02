@@ -1,0 +1,9 @@
+.contentButton{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    /* border: 1px solid red; */
+    width: 400px;
+    margin: auto;
+    padding: 10px 20px;
+}
