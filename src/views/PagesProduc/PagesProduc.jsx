@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import ImgRemera1 from "../../assets/remera.png"
 import ImgPantalon1 from "../../assets/pantalon.png"
 import ImgPantalonSkiny from "../../assets/pantalonSkinny.png";
+import { Empty } from "../../components/Empty/Empty"
 
 const produc = [
     {
@@ -42,13 +43,12 @@ export function PagesProduc(){
         
         if(idcate === "todos"){
             setValue(value);
-            /* console.log("estas en " + idcate); */
+            /* console.log(value); */
         
         }
         else if(idcate === 'pantalones'){
             /* console.log("no estas en categoria"); */
             setValue(value.filter(prod => prod.catego === idcate))
-            /* console.log(value) */
         }
         else if(idcate === 'remeras'){
             setValue(value.filter(prod => prod.catego === idcate))
@@ -59,12 +59,17 @@ export function PagesProduc(){
             /* console.log(value) */
         }
     },[idcate])
-
+    
+    /* {console.log(value.length)} */
     return (
         <main className={stylePageProduc.main}>
-            
             <section className={stylePageProduc.sec1}>
                 {
+                    /* console.log(value.length) */
+                    value.length === 0 ? <Empty /> : console.log("algo")
+                }
+                {   
+                    
                     value.map(p => {
                         return(<CardProduc
                                 key = {p.id}
@@ -74,8 +79,9 @@ export function PagesProduc(){
                                 img = {p.img}
                                 price = {p.price}
                             />)
-                    })
+                        })
                 }
+                
             </section>
         </main>
     )

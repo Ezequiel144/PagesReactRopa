@@ -29,7 +29,7 @@ const listCate = [
 export function Category(){
     /* const {idcate} = useParams(); */
     /* console.log("hola id:" + idcate) */
-
+    
     return(
         <section className={styleCategory.contentCate}>
             {
@@ -43,6 +43,7 @@ export function Category(){
                     )
                 })
             }
+            
             
             
             
