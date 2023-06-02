@@ -40,22 +40,22 @@ export function PagesProduc(){
 
     useEffect(() => {
         
-        if(idcate == "todos"){
-            /* setValue(value); */
-            console.log("estas en " + idcate);
+        if(idcate === "todos"){
+            setValue(value);
+            /* console.log("estas en " + idcate); */
         
         }
-        else if(idcate == 'pantalones'){
+        else if(idcate === 'pantalones'){
             /* console.log("no estas en categoria"); */
-            setValue(value.filter(prod => prod.catego == idcate))
+            setValue(value.filter(prod => prod.catego === idcate))
             /* console.log(value) */
         }
-        else if(idcate == 'remeras'){
-            setValue(value.filter(prod => prod.catego == idcate))
+        else if(idcate === 'remeras'){
+            setValue(value.filter(prod => prod.catego === idcate))
             /* console.log(value) */
         }
-        else if(idcate == 'buzos'){
-            setValue(value.filter(prod => prod.catego == idcate))
+        else if(idcate === 'buzos'){
+            setValue(value.filter(prod => prod.catego === idcate))
             /* console.log(value) */
         }
     },[idcate])

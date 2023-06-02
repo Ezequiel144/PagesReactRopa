@@ -4,8 +4,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: 30px;
-    height: 500px;
+    gap: 30px;
+    height: 100%;
 }
 
 .imgDetails{
@@ -21,6 +21,11 @@
 
 .contentText{
     max-width: 60%;
+}
+
+.title{
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 .descrip{

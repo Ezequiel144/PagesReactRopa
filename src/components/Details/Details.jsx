@@ -1,15 +1,15 @@
 import React from "react";
 import styleDetails from "./Details.module.css";
-import ImgRemera from "../../assets/remera.png";
 
-export function Details(){
+export function Details({img,title,descrip}){
     return(
         <aside className={styleDetails.contentDetails}>
             <div className={styleDetails.imgDetails}>
-                <img className={styleDetails.img} src={ImgRemera} alt={ImgRemera} />
+                <img className={styleDetails.img} src={img} alt="imgMain" />
             </div>
             <div className={styleDetails.contentText}>
-                <p className={styleDetails.descrip}>asoidaoid asdnaosid asoidjaoisd aoisdasdoiasd aisodaosd asdoijaosd</p>
+                <h2 className={styleDetails.title}>{title}</h2>
+                <p className={styleDetails.descrip}>{descrip}</p>
             </div>
             
         </aside>

@@ -7,6 +7,10 @@
     height: 50px;
 }
 
+.sec2{
+    text-align: center;
+}
+
 .sec3{
     display: flex;
     column-gap: 10px
