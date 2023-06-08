@@ -37,6 +37,7 @@ const produc = [
 export function PagesProduc(){
 
     const {idcate} = useParams();
+    console.log(idcate)
     const [value ,setValue] = useState(produc);
 
     useEffect(() => {
@@ -66,7 +67,7 @@ export function PagesProduc(){
             <section className={stylePageProduc.sec1}>
                 {
                     /* console.log(value.length) */
-                    value.length === 0 ? <Empty /> : console.log("algo")
+                    value.length === 0 ? <Empty /> : console.log("")
                 }
                 {   
                     

@@ -36,6 +36,8 @@ export function Navbar(){
                             return <li><Link key={elem.id} to={elem.link} className={styleNavBar.linkRute}>{elem.name}</Link></li>
                         })
                     }
+                    {/* poner la imagen de cart(carrito) */}
+                    <li><Link className={styleNavBar.cart} to={'/cart'}>cart</Link></li>
                 </ul>
             </nav>
         </header>

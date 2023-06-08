@@ -1,7 +1,9 @@
 .main{
     position: relative;
-    width: 100%;
+    max-width: 1500px;
     height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .sec1{

@@ -2,7 +2,7 @@ import React from "react";
 import styleDetails from "./Details.module.css";
 import { ButtonShop } from "../ButtonShop/ButtonShop"
 
-export function Details({id,img,title,descrip,price}){
+export function Details({id,img,title,descrip,price,addToCart}){
     return(
         <aside className={styleDetails.contentDetails}>
             <div className={styleDetails.imgDetails}>
@@ -14,7 +14,13 @@ export function Details({id,img,title,descrip,price}){
                 <h3 className={styleDetails.price}>${price}</h3>
                 <ButtonShop 
                     id = {id}
+                    img = {img}
+                    title = {title}
+                    price = {price}
+                    descrip = {descrip}
+                    addToCart={addToCart}
                 />
+                {/* <button onClick={() => {addToCard()}}>cont</button> */}
             </div>
         </aside>
     )

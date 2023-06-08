@@ -6,7 +6,7 @@ export function Footer(){
     return (
         <footer className={styleFooter.footer}>
             <section className={styleFooter.sec1}>
-                <p>Ecommers de ropa por Lote</p>
+                <p>Ecommers de ropa</p>
             </section>
             <section className={styleFooter.sec2}>
                 <p>Pagina hecha por <Link to={"https://github.com/Ezequiel144"} className={styleFooter.linkRepo}>Ezequiel Garcia</Link></p>

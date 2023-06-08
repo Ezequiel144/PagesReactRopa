@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export function SelecCategory(props){
     return(
-        <Link to={props.categoID} className={styleSelec.Category}>
+        <Link key={props.id} to={props.categoID} className={styleSelec.Category}>
             <p className={styleSelec.cateName}>{props.name}</p>
         </Link>
     )

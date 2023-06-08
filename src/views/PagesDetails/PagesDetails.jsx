@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import stylePagesDetails from "./PagesDetails.module.css";
 import { Details } from "../../components/Details/Details";
 import { useParams } from "react-router-dom";
 import ImgRemera1 from "../../assets/remera.png"
 import ImgPantalon1 from "../../assets/pantalon.png"
 import ImgPantalonSkiny from "../../assets/pantalonSkinny.png";
+import { context } from "../../components/GenericContext/GenericContext";
 
 
 export function PagesDetails(){
 
+    const { stateCard, addToCart } = useContext(context)
+    /* console.log("tiene: ",stateCard) */
     const {idprod} = useParams();
     /* console.log(idprod); */ /*los saca de path={/:idprod}*/
 
@@ -43,14 +46,6 @@ export function PagesDetails(){
 
     useEffect(() => {
         setPro(pro.find(p => p.id === idprod))
-        console.log(pro);
-        /* produc.map(p => {
-            if(idprod === p.id){
-                setPro(p);
-                
-            }
-        }) */
-        
     },[idprod])
 
 
@@ -63,8 +58,13 @@ export function PagesDetails(){
                     img={pro.img}
                     descrip={pro.descrip}
                     price={pro.price}
-                />
-                {/* <p>aca va el boton de compra</p> */}
+                    addToCart = {addToCart}
+                />{/* 
+                <button onClick={()=>{
+                    console.log(pro)
+                    addToCart(pro)
+                    
+                }}>click</button> */}
                 
             </section>
         </main>

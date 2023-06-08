@@ -1,0 +1,11 @@
+.main{
+    max-width: 1500px;
+    height: 100vh;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}

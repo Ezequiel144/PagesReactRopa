@@ -3,10 +3,10 @@ import styleCardProduc from "./CardProduc.module.css";
 /* import ImgRemera from "../../assets/remera.png" */
 import { Link } from "react-router-dom";
 
-export function CardProduc({id,title,descrip,img,price}){
+export function CardProduc({key,id,title,descrip,img,price}){
     return (
         <article className={styleCardProduc.card}>
-            <Link to={`/productos/${id}`} className={styleCardProduc.contentImg}>
+            <Link key={key} to={`/productos/${id}`} className={styleCardProduc.contentImg}>
                 <img className={styleCardProduc.img} src={img} alt="imgProduc" />
             </Link>
             <section className={styleCardProduc.contentText}>
