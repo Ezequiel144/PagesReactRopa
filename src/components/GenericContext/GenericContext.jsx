@@ -26,10 +26,12 @@ export function GenericContext( {children} ){
         }
     }
 
+    const list = stateCart;
+
     /* console.log(stateCart) */
 
     return (
-        <context.Provider value={{ stateCart, addToCart }}>
+        <context.Provider value={{ stateCart, addToCart,list }}>
             {/* <h1 className={styleGeneric.title}>shop</h1> */}
             { children }
         </context.Provider>

@@ -10,7 +10,7 @@ import { context } from "../../components/GenericContext/GenericContext";
 
 export function PagesDetails(){
 
-    const { stateCard, addToCart } = useContext(context)
+    const { stateCard, addToCart } = useContext(context);
     /* console.log("tiene: ",stateCard) */
     const {idprod} = useParams();
     /* console.log(idprod); */ /*los saca de path={/:idprod}*/
