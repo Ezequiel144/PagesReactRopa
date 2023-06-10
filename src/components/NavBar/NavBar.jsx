@@ -1,6 +1,7 @@
 import React from "react";
 import styleNavBar from "./Navbar.module.css";
 import { Link } from "react-router-dom";
+import imgCart from "../../assets/bolsa-de-la-compra.png";
 
 const listLinkRuotes = [
     {   
@@ -36,8 +37,7 @@ export function Navbar(){
                             return <li><Link key={elem.id} to={elem.link} className={styleNavBar.linkRute}>{elem.name}</Link></li>
                         })
                     }
-                    {/* poner la imagen de cart(carrito) */}
-                    <li><Link className={styleNavBar.cart} to={'/cart'}>cart</Link></li>
+                    <li className={styleNavBar.cart}><Link to={'/cart'}><img className={styleNavBar.imgCart} src={imgCart}/></Link></li>
                 </ul>
             </nav>
         </header>

@@ -2,10 +2,10 @@ import React from "react";
 import styleButtonShop from "./ButtonShop.module.css";
 
 
-export function ButtonShop({id, title, descrip, price, img, addToCart}){
+export function ButtonShop({id, title, descrip, price, img, cant,addToCart}){
     const ActionShop = () => {
-        /* console.log(e.target.id); */
-        addToCart({id:{id},title:{title},descrip:{descrip},price:{price},img:{img}})
+        /* console.log(id,{title}); */
+        addToCart({id:id,title:title,descrip:descrip,cant:cant,price:price,img:img})
     }
     return(
         <section className={styleButtonShop.contentButton}>

@@ -9,3 +9,23 @@
     align-items: center;
     row-gap: 20px;
 }
+
+.table{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.tableFila{
+    /* display: flex;
+    flex-direction: row;
+    column-gap: 10px;     */
+    background-color: thistle;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+.tableColumn{
+    padding: 5px 8px;
+    text-transform: uppercase;
+    /* border: 1px solid red; */
+}

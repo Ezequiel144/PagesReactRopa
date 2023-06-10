@@ -19,7 +19,7 @@
 .list{
     display: flex;
     justify-content:space-between;
-    align-content: center;
+    align-items: center;
     list-style: none;
     /* border: 1px solid red; */
     width: 250px;
@@ -28,4 +28,14 @@
 .linkRute{
     color: black;
     text-decoration: none;
+}
+
+
+.cart{
+    text-align: center;
+    width: 30px;
+}
+
+.imgCart{
+    width: 100%;
 }

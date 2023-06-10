@@ -36,6 +36,7 @@ export function Category(){
                 listCate.map((item) => {
                     return(
                         <SelecCategory
+                            key={item.id}
                             id = {item.id} 
                             name = {item.name}
                             categoID = {item.tolink}
